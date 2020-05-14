@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-md-4">
+        
+    </div>
+    <div class="col-md-6" style="margin-top: 10%;">
+        <div class="calculatrice row">
+            <div class="col-md-12 ecranCalc">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12">{{historique.historique1}}</div>
+                            <div class="col-md-12">{{historique.historique2}}</div>
+                            <div class="col-md-12">{{historique.historique3}}</div>
+                            <div class="col-md-12">{{historique.historique4}}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="resultatCalc" class="resultatCalc">
+                            {{resultat}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 pad" style="height: 260px;">
+
+                <div class="row">
+                    <div (click)="clickBtn(7)" class="col-md-4 boutonPad">
+                        7
+                    </div>
+                    <div (click)="clickBtn(8)" class="col-md-4 boutonPad">
+                        8
+                    </div>
+                    <div (click)="clickBtn(9)" class="col-md-4 boutonPad">
+                        9
+                    </div>
+                    <div (click)="clickBtn(4)" class="col-md-4 boutonPad">
+                        4
+                    </div>
+                    <div (click)="clickBtn(5)" class="col-md-4 boutonPad">
+                        5
+                    </div>
+                    <div (click)="clickBtn(6)" class="col-md-4 boutonPad">
+                        6
+                    </div>
+                    <div (click)="clickBtn(1)" class="col-md-4 boutonPad">
+                        1
+                    </div>
+                    <div (click)="clickBtn(2)" class="col-md-4 boutonPad">
+                        2
+                    </div>
+                    <div (click)="clickBtn(3)" class="col-md-4 boutonPad">
+                        3
+                    </div>
+                    <div (click)="clickBtn(0)" class="col-md-4 boutonPad">
+                        0
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 calcButtons" style="height: 260px;">
+                <div class="row">
+                    <div (click)="operateur('+')" class="col-md-12 boutonPad">
+                       +
+                    </div>
+                    <div (click)="operateur('-')" class="col-md-12 boutonPad">
+                        -
+                     </div>
+                     <div (click)="operateur('/')" class="col-md-12 boutonPad">
+                        /
+                     </div>
+                     <div (click)="egal()" class="col-md-12 boutonPad">
+                        =
+                     </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
